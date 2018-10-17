@@ -47,7 +47,7 @@ app.all('*', function(req, res) {   // serve all other requests
 var server = http.createServer(app);
 var boot = function () {
   server.listen(app.get('port'), function(){
-    console.info('Blue-Green-App listening on port ' + app.get('port'));
+    console.info('Blue-Green-App! listening on port ' + app.get('port'));
   });
 }
 var shutdown = function() {
